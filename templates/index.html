@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Traffic Monitoring</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Smart Traffic Monitoring</h1>
+    <img src="{{ url_for('static', filename='frame.jpg') }}" width="640" alt="Traffic Feed">
+    <p>Vehicle Count: {{ data.count }}</p>
+    <p>Current Density: {{ "%.6f"|format(data.density) }}</p>
+    <p>Predicted Density (2s ahead): {{ "%.6f"|format(data.prediction) }}</p>
+    {% if data.prediction > 0.0001 %}
+        <p style="color: red;">Warning: Congestion likely!</p>
+    {% else %}
+        <p style="color: green;">Traffic looks clear.</p>
+    {% endif %}
+</body>
+</html>
