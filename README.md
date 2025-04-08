@@ -3,8 +3,8 @@
 ## Overview
 The **Smart Traffic Monitoring and Prediction System** is a Python-based project that analyzes traffic conditions using pre-recorded video footage. It employs YOLOv8 for vehicle detection, calculates traffic density, predicts congestion levels 2 seconds ahead using statistical and machine learning methods, and presents results in a web dashboard powered by Flask. This system serves as a practical demonstration of computer vision and machine learning for traffic monitoring.
 
-![Dashboard Screenshot](https://github.com/Lin172005/Smart-Traffic-Monitoring-and-Prediction-System/blob/main/static/screenshot.png?raw=true)
-*(Note: Upload your latest screenshot as `static/screenshot.png` and update the link if the filename differs)*
+![Dashboard Screenshot](https://github.com/Lin172005/Smart-Traffic-Monitoring-and-Prediction-System/blob/main/static/frame.jpg)
+
 
 ## Features
 - Detects vehicles (cars, buses, trucks, motorcycles) using YOLOv8 with confidence scores.
